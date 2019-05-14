@@ -59,3 +59,9 @@ document.querySelectorAll('img').forEach(item=>{
 window.addEventListener('load',e=>{
     alert('You are GOING TO HAVE FUN!!!')
 })
+
+document.querySelectorAll('p').forEach(ele=>
+    ele.addEventListener('select',(e)=>{
+        e.currentTarget.style.backgroundColor=rc()
+    })
+)
